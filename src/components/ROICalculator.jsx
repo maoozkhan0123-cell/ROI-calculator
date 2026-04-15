@@ -431,19 +431,19 @@ const ROICalculator = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
                <div className="bg-gray-50 p-4 rounded-2xl border border-gray-100 text-center">
                 <p className="text-[11px] font-semibold text-gray-500 uppercase tracking-wide">Current Annual Cost</p>
-                <p className="text-2xl font-bold text-gray-800 mt-2">
+                <p className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mt-2 truncate">
                   $<CountUp end={totalCurrentCost} />
                 </p>
               </div>
               <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-4 rounded-2xl text-white text-center shadow-lg transform hover:-translate-y-1 transition-all">
                 <p className="text-[11px] font-medium text-blue-100 uppercase tracking-wide">Community Savings</p>
-                <p className="text-2xl font-bold mt-2">
+                <p className="text-lg sm:text-xl lg:text-2xl font-bold mt-2 truncate">
                   +$<CountUp end={savingsCommunity > 0 ? savingsCommunity : 0} />
                 </p>
               </div>
               <div className="bg-gradient-to-br from-bytech-primary to-bytech-accent p-4 rounded-2xl text-white text-center shadow-lg transform hover:-translate-y-1 transition-all">
                 <p className="text-[11px] font-medium text-blue-100 uppercase tracking-wide">Enterprise Savings</p>
-                <p className="text-2xl font-bold mt-2">
+                <p className="text-lg sm:text-xl lg:text-2xl font-bold mt-2 truncate">
                   +$<CountUp end={savingsEnterprise > 0 ? savingsEnterprise : 0} />
                 </p>
               </div>
