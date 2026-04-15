@@ -435,23 +435,21 @@ const ROICalculator = () => {
                   $<CountUp end={totalCurrentCost} />
                 </p>
               </div>
-              </div>
-              <div className="bg-gradient-to-br from-blue-500 to-blue-600 px-2 py-4 rounded-2xl text-white text-center shadow-lg transform hover:-translate-y-1 transition-all">
+               <div className="bg-gradient-to-br from-blue-500 to-blue-600 px-2 py-4 rounded-2xl text-white text-center shadow-lg transform hover:-translate-y-1 transition-all">
                 <p className="text-[11px] font-medium text-blue-100 uppercase tracking-wide">Community Savings</p>
                 <p className="text-base sm:text-lg lg:text-xl font-bold mt-2 truncate">
                   +$<CountUp end={savingsCommunity > 0 ? savingsCommunity : 0} />
                 </p>
               </div>
-              </div>
-              <div className="bg-gradient-to-br from-bytech-primary to-bytech-accent px-2 py-4 rounded-2xl text-white text-center shadow-lg transform hover:-translate-y-1 transition-all">
+               <div className="bg-gradient-to-br from-bytech-primary to-bytech-accent px-2 py-4 rounded-2xl text-white text-center shadow-lg transform hover:-translate-y-1 transition-all">
                 <p className="text-[11px] font-medium text-blue-100 uppercase tracking-wide">Enterprise Savings</p>
                 <p className="text-base sm:text-lg lg:text-xl font-bold mt-2 truncate">
                   +$<CountUp end={savingsEnterprise > 0 ? savingsEnterprise : 0} />
                 </p>
               </div>
-              <div className="bg-emerald-500 p-4 rounded-2xl text-white text-center shadow-lg transform hover:-translate-y-1 transition-all">
+              <div className="bg-emerald-500 px-2 py-4 rounded-2xl text-white text-center shadow-lg transform hover:-translate-y-1 transition-all">
                 <p className="text-[11px] font-medium text-emerald-100 uppercase tracking-wide">Payback</p>
-                <p className="text-2xl font-bold mt-2">
+                <p className="text-xl sm:text-2xl font-bold mt-2">
                   <CountUp end={parseFloat(paybackPeriod)} duration={1500} suffix=" Mo" />
                 </p>
               </div>
